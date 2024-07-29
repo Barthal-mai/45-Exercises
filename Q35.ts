@@ -1,13 +1,10 @@
 function printAnimalStatements(animals: string[]): void {
-    // Print each animal name
     console.log("List of animals:");
     for (let animal of animals) {
         console.log(animal);
     }
 
-    console.log(); // Empty line for separation
-
-    // Print statement about each animal
+    console.log(); 
     console.log("Statements about each animal:");
     for (let animal of animals) {
         switch (animal) {
@@ -26,15 +23,11 @@ function printAnimalStatements(animals: string[]): void {
         }
     }
 
-    console.log(); // Empty line for separation
-
-    // Print common characteristic statement
+    console.log();
+    
     console.log("Common characteristic:");
     console.log("Any of these animals would make a great pet!");
 }
 
-// List of animals
 let animals: string[] = ["dog", "cat", "rabbit"];
-
-// Call function to print statements about animals
 printAnimalStatements(animals);
